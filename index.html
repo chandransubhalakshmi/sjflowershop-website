@@ -1,96 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SJ Flower Shop</title>
-  <style>
-    :root{
-      --bg1:#004d45;
-      --bg2:#0fa07f;
-      --accent:#f4b83b;
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    }
-    html,body{height:100%;margin:0}
-    body{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:linear-gradient(180deg,#0e6b64 0%, #7bd3b9 100%);
-    }
-    .card{
-      width:360px;
-      max-width:92vw;
-      text-align:center;
-      padding:28px 20px 36px;
-      border-radius:16px;
-      background:transparent;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
-      position:relative;
-    }
-    /* triangular panel */
-    .triangle{
-      width:100%;
-      height:260px;
-      background:linear-gradient(140deg,var(--bg1), var(--bg2));
-      clip-path: polygon(50% 4%, 98% 86%, 2% 86%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      margin-bottom:20px;
-      position:relative;
-    }
-    .triangle::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-      clip-path: polygon(50% 4%, 98% 86%, 2% 86%);
-    }
-    .logo{
-      width:140px;
-      height:140px;
-      object-fit:contain;
-      border-radius:14px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.04));
-      padding:8px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    }
-    h1{margin:0 0 6px 0;color:#fff;font-size:20px;letter-spacing:0.6px}
-    p{margin:0;color:rgba(255,255,255,0.85)}
-    .contact{
-      margin-top:12px;
-      background:#fff;
-      border-radius:10px;
-      padding:12px;
-      color:#0b4a43;
-      font-weight:600;
-      display:flex;
-      flex-direction:column;
-      gap:6px;
-    }
-    a{color:inherit;text-decoration:none}
-    .muted{font-weight:400;font-size:13px;color:#555}
-    @media (max-width:420px){
-      .triangle{height:220px}
-      .logo{width:120px;height:120px}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SJ FLOWERSHOP | About Us</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ffffff;
+    color: #333;
+}
+header {
+    background: #0f766e;
+    color: white;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background: white;
+}
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+header p {
+    margin: 5px 0 0;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+.section {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.section h2 {
+    color: #0f766e;
+    margin-top: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 15px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 6px;
+}
+.btn {
+    display: inline-block;
+    background: #0f766e;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+footer {
+    background: #0f766e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
 </head>
+
 <body>
-  <div class="card">
-    <div class="triangle">
-      <!-- Put your logo file named logo.png here -->
-      <img src="logo.png" alt="SJ Flower Shop logo" class="logo" />
-    </div>
 
-    <h1>SJ Flower Shop</h1>
-    <p class="muted">Fresh flowers • Handcrafted arrangements</p>
+<header>
+    <!-- LOGO -->
+    <img src="https://via.placeholder.com/80x80?text=LOGO" alt="SJ Flowershop Logo">
 
-    <div class="contact" aria-label="contact information">
-      <div>Email: <a href="mailto:Sjflowershop2000@gmail.com">Sjflowershop2000@gmail.com</a></div>
-      <div>Phone: <a href="tel:+919626605328">+91 96266 05328</a></div>
+    <div>
+        <h1>SJ FLOWERSHOP</h1>
+        <p>Fresh Flowers for Every Occasion</p>
     </div>
-  </div>
+</header>
+
+<div class="container">
+
+<!-- BUSINESS DETAILS -->
+<div class="section">
+<h2>Business Details</h2>
+<table>
+<tr><td><strong>Business Name</strong></td><td>SJ FLOWERSHOP</td></tr>
+<tr><td><strong>Type</strong></td><td>Florist / Flower Shop</td></tr>
+<tr><td><strong>Location</strong></td><td>Tamil Nadu, India</td></tr>
+<tr><td><strong>Phone</strong></td><td>9626605328</td></tr>
+<tr><td><strong>Email</strong></td><td>sjflowershop2000@gmail.com</td></tr>
+</table>
+<a class="btn" href="tel:9626605328">Call Now</a>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+<h2>About Us</h2>
+<p><strong>SJ FLOWERSHOP</strong> is a trusted flower shop offering fresh and premium-quality flowers for weddings, birthdays, anniversaries, festivals and special occasions.</p>
+<p>We focus on quality, creativity and customer satisfaction. Every bouquet is prepared with care and delivered on time.</p>
+</div>
+
+<!-- SERVICES -->
+<div class="section">
+<h2>Our Services</h2>
+<ul>
+<li>Fresh Flower Bouquets</li>
+<li>Wedding & Event Decorations</li>
+<li>Birthday & Anniversary Flowers</li>
+<li>Custom Floral Arrangements</li>
+<li>Festival Flowers</li>
+<li>Bulk & Corporate Orders</li>
+</ul>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+<h2>Flower Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92">
+<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946">
+<img src="https://images.unsplash.com/photo-1526045478516-99145907023c">
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+<h2>Contact Us</h2>
+<p><strong>Phone:</strong> 9626605328</p>
+<p><strong>Email:</strong> sjflowershop2000@gmail.com</p>
+<a class="btn" href="https://www.instagram.com/sjflowershop2000" target="_blank">Instagram</a>
+</div>
+
+</div>
+
+<footer>
+© 2025 SJ FLOWERSHOP. All Rights Reserved.
+</footer>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" 
+href="https://wa.me/919626605328" 
+target="_blank">
+WhatsApp Us
+</a>
+
 </body>
 </html>
